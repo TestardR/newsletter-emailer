@@ -5,6 +5,15 @@ edition = "2021"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
+# Necessary boilerplate to have /tests next to /src and wite ITs
+[lib]
+path = "src/lib.rs"
+
+[[bin]]
+path = "src/main.rs"
+name = "newsletterEmailer"
+
 [dependencies]
 actix-web = "4"
 tokio = { version = "1.35.0", features = ["macros", "rt-multi-thread"] }
+reqwest = "0.11.22"
