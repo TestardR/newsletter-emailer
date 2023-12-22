@@ -2,8 +2,8 @@ use newsletter_emailer::configuration::get_configuration;
 use newsletter_emailer::startup::run;
 use newsletter_emailer::telemetry::{get_subscriber, init_subscriber};
 use secrecy::ExposeSecret;
-use std::net::TcpListener;
 use sqlx::postgres::PgPoolOptions;
+use std::net::TcpListener;
 
 #[tokio::main]
 async fn main() -> std::io::Result<()> {
