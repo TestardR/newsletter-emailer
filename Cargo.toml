@@ -16,7 +16,7 @@ name = "newsletter_emailer"
 [dependencies]
 actix-web = "4"
 tokio = { version = "1.35.0", features = ["macros", "rt-multi-thread"] }
-reqwest = "0.11.22"
+reqwest = { version = "0.11", default-features = false, features = ["json", "rustls-tls"] }
 serde = { version = "1.0.193", features = ["derive"] }
 config = { version = "0.13", default-features = false, features = ["yaml"] }
 uuid = { version = "0.8.1", features = ["v4"] }
