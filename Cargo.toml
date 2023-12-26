@@ -35,6 +35,7 @@ validator = "0.14"
 matchers = "0.1.0"
 url = "2.5.0"
 serde_json = { version = "1.0.108", features = [] }
+serde-aux = "4"
 
 [dependencies.sqlx]
 version = "0.5.7"
